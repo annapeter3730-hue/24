@@ -293,6 +293,46 @@
       }
     }
 
+// ✅ 첫 화면에 랜덤으로 프로필 보여주는 기능
+async function loadRandomProfiles(){
+  const allRegions = Object.keys(data);
+  const randomProfiles = [];
+  const shuffled = allRegions.sort(() => Math.random() - 0.5).slice(0, 10);
+
+  for(const region of shuffled){
+    const cities = data[region];
+    const city = cities[Math.floor(Math.random() * cities.length)];
+    try{
+      const res = await fetch(`images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
+      const list = await res.json();
+      if(list.length > 0){
+        const p = list[Math.floor(Math.random() * list.length)];
+        randomProfiles.push({...p, region, city});
+      }
+    }catch(e){}
+  }
+
+  profilesDiv.innerHTML = "";
+  randomProfiles.forEach(p => {
+    const imgPath = `images/${encodeURIComponent(p.region)}/${encodeURIComponent(p.city)}/${encodeURIComponent(p.img)}`;
+    const card = document.createElement("div");
+    card.className = "profile";
+    card.innerHTML = `
+      <img src="${imgPath}" alt="${p.name}">
+      <h3>${p.name}</h3>
+      <p>${p.region} / ${p.city}</p>
+      <p>AGE: ${p.age}</p>
+      <p>BODYTYPE: ${p.bodytype}</p>
+    `;
+    card.onclick = () => openModal(p, p.region, p.city);
+    profilesDiv.appendChild(card);
+  });
+}
+
+// ✅ 페이지 열리자마자 자동 실행
+loadRandomProfiles();
+
+
     const modal=document.getElementById("modal");
     const modalImg=document.getElementById("modalImg");
     const modalName=document.getElementById("modalName");
