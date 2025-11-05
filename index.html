@@ -183,131 +183,133 @@
       "제주도": ["제주","서귀포"]
     };
 
-    const regionList = document.getElementById("regionList");
-    const cityList = document.getElementById("cityList");
-    const profilesDiv = document.getElementById("profiles");
+    const regionList=document.getElementById("regionList");
+    const cityList=document.getElementById("cityList");
+    const profilesDiv=document.getElementById("profiles");
 
-    Object.keys(data).forEach(region => {
-      const div = document.createElement("div");
-      div.className = "region";
-      div.textContent = region;
-      div.onclick = () => showCities(region);
+    Object.keys(data).forEach(region=>{
+      const div=document.createElement("div");
+      div.className="region";
+      div.textContent=region;
+      div.onclick=()=>showCities(region);
       regionList.appendChild(div);
     });
 
-    function showCities(region) {
-      cityList.innerHTML = "";
-      profilesDiv.innerHTML = "";
-      regionList.style.display = "none";
+    function encodePath(path) {
+      return path.split('/').map(part => encodeURIComponent(part)).join('/');
+    }
 
-      const back = document.createElement("div");
-      back.className = "back-btn";
-      back.textContent = "← 뒤로가기";
-      back.onclick = () => {
-        regionList.style.display = "flex";
-        cityList.innerHTML = "";
-        profilesDiv.innerHTML = "";
+    function showCities(region){
+      cityList.innerHTML="";
+      profilesDiv.innerHTML="";
+      regionList.style.display="none";
+
+      const back=document.createElement("div");
+      back.className="back-btn";
+      back.textContent="← 뒤로가기";
+      back.onclick=()=>{
+        regionList.style.display="flex";
+        cityList.innerHTML="";
+        profilesDiv.innerHTML="";
       };
       cityList.appendChild(back);
 
-      data[region].forEach(city => {
-        const div = document.createElement("div");
-        div.className = "city";
-        div.textContent = city;
-        div.onclick = () => showProfiles(region, city);
+      data[region].forEach(city=>{
+        const div=document.createElement("div");
+        div.className="city";
+        div.textContent=city;
+        div.onclick=()=>showProfiles(region,city);
         cityList.appendChild(div);
       });
     }
 
-    async function showProfiles(region, city) {
-      profilesDiv.innerHTML = "";
-      try {
-        const path = encodeURI(`24/images/${region}/${city}/list.json`);
-        const res = await fetch(path);
-        const profiles = await res.json();
+    async function showProfiles(region,city){
+      profilesDiv.innerHTML="";
+      try{
+        const path = encodePath(`24/images/${region}/${city}/list.json`);
+        const res=await fetch(path);
+        const profiles=await res.json();
 
-        profiles.forEach(p => {
-          const imgPath = encodeURI(`24/images/${region}/${city}/${p.img}`);
-          const card = document.createElement("div");
-          card.className = "profile";
-          card.innerHTML = `
+        profiles.forEach(p=>{
+          const imgPath = encodePath(`24/images/${region}/${city}/${p.img}`);
+          const card=document.createElement("div");
+          card.className="profile";
+          card.innerHTML=`
             <img src="${imgPath}" alt="${p.name}">
             <h3>${p.name}</h3>
             <p>AGE: ${p.age}</p>
             <p>BODYTYPE: ${p.bodytype}</p>
           `;
-          card.onclick = () => openModal(p, region, city);
+          card.onclick=()=>openModal(p,region,city);
           profilesDiv.appendChild(card);
         });
-      } catch (e) {
-        console.error(e);
-        profilesDiv.innerHTML = `<div class="empty">⚠️ ${city} 지역 데이터가 없습니다.</div>`;
+      }catch(e){
+        profilesDiv.innerHTML=`<div class="empty">⚠️ ${city} 지역 데이터가 없습니다.</div>`;
       }
     }
 
-    async function loadRandomProfiles() {
-      const allRegions = Object.keys(data);
-      const randomProfiles = [];
-      const shuffled = allRegions.sort(() => Math.random() - 0.5).slice(0, 10);
+    async function loadRandomProfiles(){
+      const allRegions=Object.keys(data);
+      const randomProfiles=[];
+      const shuffled=allRegions.sort(()=>Math.random()-0.5).slice(0,10);
 
-      for (const region of shuffled) {
-        const cities = data[region];
-        const city = cities[Math.floor(Math.random() * cities.length)];
-        try {
-          const path = encodeURI(`24/images/${region}/${city}/list.json`);
-          const res = await fetch(path);
-          const list = await res.json();
-          if (list.length > 0) {
-            const p = list[Math.floor(Math.random() * list.length)];
-            randomProfiles.push({ ...p, region, city });
+      for(const region of shuffled){
+        const cities=data[region];
+        const city=cities[Math.floor(Math.random()*cities.length)];
+        try{
+          const path=encodePath(`24/images/${region}/${city}/list.json`);
+          const res=await fetch(path);
+          const list=await res.json();
+          if(list.length>0){
+            const p=list[Math.floor(Math.random()*list.length)];
+            randomProfiles.push({...p,region,city});
           }
-        } catch {}
+        }catch{}
       }
 
-      profilesDiv.innerHTML = "";
-      randomProfiles.forEach(p => {
-        const imgPath = encodeURI(`24/images/${p.region}/${p.city}/${p.img}`);
-        const card = document.createElement("div");
-        card.className = "profile";
-        card.innerHTML = `
+      profilesDiv.innerHTML="";
+      randomProfiles.forEach(p=>{
+        const imgPath=encodePath(`24/images/${p.region}/${p.city}/${p.img}`);
+        const card=document.createElement("div");
+        card.className="profile";
+        card.innerHTML=`
           <img src="${imgPath}" alt="${p.name}">
           <h3>${p.name}</h3>
           <p>${p.region} / ${p.city}</p>
           <p>AGE: ${p.age}</p>
           <p>BODYTYPE: ${p.bodytype}</p>
         `;
-        card.onclick = () => openModal(p, p.region, p.city);
+        card.onclick=()=>openModal(p,p.region,p.city);
         profilesDiv.appendChild(card);
       });
     }
-
     loadRandomProfiles();
 
-    const modal = document.getElementById("modal");
-    const modalImg = document.getElementById("modalImg");
-    const modalName = document.getElementById("modalName");
-    const modalAge = document.getElementById("modalAge");
-    const modalBody = document.getElementById("modalBody");
-    const closeBtn = document.querySelector(".close-btn");
+    const modal=document.getElementById("modal");
+    const modalImg=document.getElementById("modalImg");
+    const modalName=document.getElementById("modalName");
+    const modalAge=document.getElementById("modalAge");
+    const modalBody=document.getElementById("modalBody");
+    const closeBtn=document.querySelector(".close-btn");
 
-    function openModal(p, region, city) {
+    function openModal(p,region,city){
       modal.classList.add("active");
-      const imgPath = encodeURI(`24/images/${region}/${city}/${p.img}`);
-      modalImg.src = imgPath;
-      modalName.textContent = p.name;
-      modalAge.textContent = `AGE: ${p.age}`;
-      modalBody.textContent = `BODYTYPE: ${p.bodytype}`;
+      const imgPath=encodePath(`24/images/${region}/${city}/${p.img}`);
+      modalImg.src=imgPath;
+      modalName.textContent=p.name;
+      modalAge.textContent=`AGE: ${p.age}`;
+      modalBody.textContent=`BODYTYPE: ${p.bodytype}`;
     }
 
-    closeBtn.onclick = () => modal.classList.remove("active");
-    modal.onclick = e => { if (e.target === modal) modal.classList.remove("active"); };
+    closeBtn.onclick=()=>modal.classList.remove("active");
+    modal.onclick=e=>{if(e.target===modal)modal.classList.remove("active");};
 
-    document.querySelectorAll(".tab").forEach(tab => {
-      tab.onclick = () => {
-        document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".tab").forEach(tab=>{
+      tab.onclick=()=>{
+        document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
         tab.classList.add("active");
-        document.querySelectorAll(".content").forEach(c => c.style.display = "none");
-        document.getElementById(tab.dataset.tab).style.display = "block";
+        document.querySelectorAll(".content").forEach(c=>c.style.display="none");
+        document.getElementById(tab.dataset.tab).style.display="block";
       };
     });
   </script>
