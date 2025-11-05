@@ -289,6 +289,37 @@
       color: var(--gold);
     }
 
+/* 💎 헤더 제목 고급 스타일 */
+header h1 {
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px rgba(233,184,100,0.4),
+    0 0 20px rgba(233,184,100,0.3),
+    0 0 40px rgba(233,184,100,0.2);
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% {
+    text-shadow:
+      0 0 10px rgba(233,184,100,0.3),
+      0 0 20px rgba(233,184,100,0.2),
+      0 0 40px rgba(233,184,100,0.1);
+    transform: scale(1);
+  }
+  100% {
+    text-shadow:
+      0 0 25px rgba(233,184,100,0.8),
+      0 0 50px rgba(233,184,100,0.5),
+      0 0 80px rgba(233,184,100,0.3);
+    transform: scale(1.02);
+  }
+}
+
 /* ✨ 여기까지 붙여넣기 끝 ✨ */
 
   </style>
