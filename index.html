@@ -180,7 +180,80 @@
     @media(max-width:600px) {
       .profile img { height: 140px; }
     }
+    @media(max-width:600px) {
+      .profile img { height: 140px; }
+    }
+
+/* ✨ 여기 아래에 붙여넣기 ✨ */
+
+    /* ─────────────────────────────
+       💎 코스 안내 (3단 카드형)
+    ───────────────────────────── */
+    .course-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .course-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      width: 300px;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+    .course-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(233,184,100,0.2), transparent);
+      transition: 0.8s;
+    }
+    .course-card:hover::before {
+      left: 100%;
+    }
+    .course-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(233,184,100,0.2);
+    }
+    .course-card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+    .course-card h3 {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .course-card p {
+      font-size: 14px;
+      color: #c9d4e5;
+      margin: 4px 0;
+    }
+    .course-price {
+      margin-top: 25px;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--gold);
+    }
+
+/* ✨ 여기까지 붙여넣기 끝 ✨ */
+
   </style>
+</head>
+
+  
+</style>
 </head>
 <body>
   <header>
@@ -201,7 +274,47 @@
       <div class="profiles" id="profiles"></div>
     </div>
 
-    <div id="course" class="content" style="display:none;text-align:center;">코스별 안내 준비중입니다.</div>
+    <div id="course" class="content" style="display:none;">
+  <h2 style="text-align:center; color: var(--accent); margin-bottom: 30px;">코스별 이용 안내</h2>
+  <div class="course-container">
+    <div class="course-card glow">
+      <h3 class="course-title">A 코스</h3>
+      <p class="course-subtitle">BASIC SESSION</p>
+      <ul>
+        <li>이용시간: 120분</li>
+        <li>안마시간: 30분</li>
+        <li>연애 횟수: 1회</li>
+        <li>추가요청: 매니저 문의</li>
+      </ul>
+      <div class="course-price">₩150,000</div>
+    </div>
+
+    <div class="course-card glow">
+      <h3 class="course-title">B 코스</h3>
+      <p class="course-subtitle">PREMIUM SESSION</p>
+      <ul>
+        <li>이용시간: 240분</li>
+        <li>안마시간: 40분</li>
+        <li>연애 횟수: 2회</li>
+        <li>추가요청: 매니저 문의</li>
+      </ul>
+      <div class="course-price">₩250,000</div>
+    </div>
+
+    <div class="course-card glow">
+      <h3 class="course-title">C 코스</h3>
+      <p class="course-subtitle">EXCLUSIVE SESSION</p>
+      <ul>
+        <li>이용시간: 360분</li>
+        <li>안마시간: 60분</li>
+        <li>연애 횟수: 무제한</li>
+        <li>추가요청: 매니저 문의</li>
+      </ul>
+      <div class="course-price">₩400,000</div>
+    </div>
+  </div>
+</div>
+
 
     <div id="notice" class="content" style="display:none;">
       <div class="notice-container" id="noticeContainer"></div>
