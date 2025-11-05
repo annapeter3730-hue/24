@@ -1,0 +1,32 @@
+[
+  {
+    "name": "수슬",
+    "age": "26",
+    "bodytype": "167/52/A",
+    "img": "467.png"
+  },
+  {
+    "name": "아유",
+    "age": "22",
+    "bodytype": "161/46/A",
+    "img": "468.png"
+  },
+  {
+    "name": "소샘",
+    "age": "26",
+    "bodytype": "164/49/A",
+    "img": "469.png"
+  },
+  {
+    "name": "보안",
+    "age": "25",
+    "bodytype": "160/45/D",
+    "img": "470.png"
+  },
+  {
+    "name": "지혜",
+    "age": "26",
+    "bodytype": "165/50/E",
+    "img": "471.png"
+  }
+]

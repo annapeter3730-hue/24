@@ -1,0 +1,68 @@
+[
+  {
+    "name": "시비",
+    "age": "21",
+    "bodytype": "161/46/D",
+    "img": "17.png"
+  },
+  {
+    "name": "소율",
+    "age": "23",
+    "bodytype": "161/46/D",
+    "img": "18.png"
+  },
+  {
+    "name": "모정",
+    "age": "26",
+    "bodytype": "170/55/C",
+    "img": "19.png"
+  },
+  {
+    "name": "주현",
+    "age": "20",
+    "bodytype": "162/47/E",
+    "img": "20.png"
+  },
+  {
+    "name": "예윤",
+    "age": "22",
+    "bodytype": "161/46/B",
+    "img": "21.png"
+  },
+  {
+    "name": "리안",
+    "age": "20",
+    "bodytype": "161/46/D",
+    "img": "22.png"
+  },
+  {
+    "name": "다아",
+    "age": "25",
+    "bodytype": "167/52/C",
+    "img": "23.png"
+  },
+  {
+    "name": "가솔",
+    "age": "20",
+    "bodytype": "161/46/A",
+    "img": "24.png"
+  },
+  {
+    "name": "은원",
+    "age": "27",
+    "bodytype": "163/48/B",
+    "img": "25.png"
+  },
+  {
+    "name": "유별",
+    "age": "27",
+    "bodytype": "166/51/A",
+    "img": "26.png"
+  },
+  {
+    "name": "윤연",
+    "age": "20",
+    "bodytype": "170/55/D",
+    "img": "27.png"
+  }
+]

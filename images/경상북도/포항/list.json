@@ -1,0 +1,32 @@
+[
+  {
+    "name": "미현",
+    "age": "26",
+    "bodytype": "160/45/C",
+    "img": "433.png"
+  },
+  {
+    "name": "예원",
+    "age": "25",
+    "bodytype": "166/51/D",
+    "img": "434.png"
+  },
+  {
+    "name": "예람",
+    "age": "23",
+    "bodytype": "165/50/D",
+    "img": "435.png"
+  },
+  {
+    "name": "이희",
+    "age": "24",
+    "bodytype": "170/55/B",
+    "img": "436.png"
+  },
+  {
+    "name": "은비",
+    "age": "27",
+    "bodytype": "166/51/B",
+    "img": "437.png"
+  }
+]

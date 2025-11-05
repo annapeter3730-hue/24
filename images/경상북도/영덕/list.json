@@ -1,0 +1,38 @@
+[
+  {
+    "name": "라벨",
+    "age": "26",
+    "bodytype": "165/50/C",
+    "img": "438.png"
+  },
+  {
+    "name": "연예",
+    "age": "22",
+    "bodytype": "170/55/A",
+    "img": "439.png"
+  },
+  {
+    "name": "지우",
+    "age": "25",
+    "bodytype": "160/45/B",
+    "img": "440.png"
+  },
+  {
+    "name": "보솔",
+    "age": "24",
+    "bodytype": "162/47/B",
+    "img": "441.png"
+  },
+  {
+    "name": "이율",
+    "age": "27",
+    "bodytype": "164/49/A",
+    "img": "442.png"
+  },
+  {
+    "name": "유리",
+    "age": "23",
+    "bodytype": "169/54/D",
+    "img": "443.png"
+  }
+]

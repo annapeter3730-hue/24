@@ -1,0 +1,32 @@
+[
+  {
+    "name": "다인",
+    "age": "23",
+    "bodytype": "162/46/B",
+    "img": "274.png"
+  },
+  {
+    "name": "예슬",
+    "age": "25",
+    "bodytype": "165/49/C",
+    "img": "275.png"
+  },
+  {
+    "name": "하영",
+    "age": "21",
+    "bodytype": "160/44/B",
+    "img": "276.png"
+  },
+  {
+    "name": "유림",
+    "age": "26",
+    "bodytype": "167/50/D",
+    "img": "277.png"
+  },
+  {
+    "name": "민아",
+    "age": "24",
+    "bodytype": "163/47/C",
+    "img": "278.png"
+  }
+]

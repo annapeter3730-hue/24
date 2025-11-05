@@ -1,0 +1,62 @@
+[
+  {
+    "name": "민솔",
+    "age": 24,
+    "bodytype": "164/45/D",
+    "img": "92.png"
+  },
+  {
+    "name": "주리",
+    "age": 21,
+    "bodytype": "156/41/D",
+    "img": "93.png"
+  },
+  {
+    "name": "다현",
+    "age": 23,
+    "bodytype": "165/48/B",
+    "img": "94.png"
+  },
+  {
+    "name": "하린",
+    "age": 25,
+    "bodytype": "160/42/D",
+    "img": "95.png"
+  },
+  {
+    "name": "서연",
+    "age": 21,
+    "bodytype": "157/41/A",
+    "img": "96.png"
+  },
+  {
+    "name": "예린",
+    "age": 23,
+    "bodytype": "162/47/B",
+    "img": "97.png"
+  },
+  {
+    "name": "지안",
+    "age": 24,
+    "bodytype": "163/45/C",
+    "img": "98.png"
+  },
+  {
+    "name": "미별",
+    "age": 25,
+    "bodytype": "167/50/D",
+    "img": "99.png"
+  },
+  {
+    "name": "루아",
+    "age": 21,
+    "bodytype": "161/48/C",
+    "img": "100.png"
+  },
+  {
+    "name": "가현",
+    "age": 25,
+    "bodytype": "158/41/C",
+    "img": "101.png"
+  }
+]

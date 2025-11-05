@@ -1,0 +1,74 @@
+[
+  {
+    "name": "윤서",
+    "age": "24",
+    "bodytype": "163/48/C",
+    "img": "69.png"
+  },
+  {
+    "name": "루안",
+    "age": "20",
+    "bodytype": "165/50/A",
+    "img": "70.png"
+  },
+  {
+    "name": "은슬",
+    "age": "23",
+    "bodytype": "165/50/A",
+    "img": "71.png"
+  },
+  {
+    "name": "슬람",
+    "age": "21",
+    "bodytype": "166/51/E",
+    "img": "72.png"
+  },
+  {
+    "name": "주비",
+    "age": "25",
+    "bodytype": "170/55/D",
+    "img": "73.png"
+  },
+  {
+    "name": "아솔",
+    "age": "24",
+    "bodytype": "162/47/C",
+    "img": "74.png"
+  },
+  {
+    "name": "슬연",
+    "age": "20",
+    "bodytype": "163/48/D",
+    "img": "75.png"
+  },
+  {
+    "name": "아별",
+    "age": "20",
+    "bodytype": "162/47/C",
+    "img": "76.png"
+  },
+  {
+    "name": "채영",
+    "age": "28",
+    "bodytype": "170/55/A",
+    "img": "77.png"
+  },
+  {
+    "name": "윤예",
+    "age": "20",
+    "bodytype": "165/50/A",
+    "img": "78.png"
+  },
+  {
+    "name": "하안",
+    "age": "28",
+    "bodytype": "163/48/A",
+    "img": "79.png"
+  },
+  {
+    "name": "시안",
+    "age": "22",
+    "bodytype": "170/55/E",
+    "img": "80.png"
+  }
+]

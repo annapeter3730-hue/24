@@ -1,0 +1,32 @@
+[
+  {
+    "name": "시온",
+    "age": "24",
+    "bodytype": "163/48/C",
+    "img": "348.png"
+  },
+  {
+    "name": "모별",
+    "age": "26",
+    "bodytype": "165/50/E",
+    "img": "349.png"
+  },
+  {
+    "name": "유정아",
+    "age": "23",
+    "bodytype": "164/49/E",
+    "img": "350.png"
+  },
+  {
+    "name": "채이",
+    "age": "25",
+    "bodytype": "166/51/A",
+    "img": "351.png"
+  },
+  {
+    "name": "하율",
+    "age": "22",
+    "bodytype": "160/45/B",
+    "img": "352.png"
+  }
+]

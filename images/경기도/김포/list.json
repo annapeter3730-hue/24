@@ -1,0 +1,62 @@
+[
+  {
+    "name": "다온",
+    "age": 27,
+    "bodytype": "162/43/C",
+    "img": "102.png"
+  },
+  {
+    "name": "유정",
+    "age": 21,
+    "bodytype": "157/48/A",
+    "img": "103.png"
+  },
+  {
+    "name": "나리",
+    "age": 25,
+    "bodytype": "165/47/B",
+    "img": "104.png"
+  },
+  {
+    "name": "민지",
+    "age": 23,
+    "bodytype": "160/45/A",
+    "img": "105.png"
+  },
+  {
+    "name": "다비",
+    "age": 26,
+    "bodytype": "168/50/D",
+    "img": "106.png"
+  },
+  {
+    "name": "은람",
+    "age": 20,
+    "bodytype": "156/49/B",
+    "img": "107.png"
+  },
+  {
+    "name": "채율",
+    "age": 24,
+    "bodytype": "161/44/C",
+    "img": "108.png"
+  },
+  {
+    "name": "예서",
+    "age": 22,
+    "bodytype": "163/46/D",
+    "img": "109.png"
+  },
+  {
+    "name": "로정",
+    "age": 28,
+    "bodytype": "155/41/B",
+    "img": "110.png"
+  },
+  {
+    "name": "수진",
+    "age": 23,
+    "bodytype": "166/51/A",
+    "img": "111.png"
+  }
+]

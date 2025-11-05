@@ -1,0 +1,44 @@
+[
+  {
+    "name": "다유",
+    "age": "26",
+    "bodytype": "166/51/C",
+    "img": "536.png"
+  },
+  {
+    "name": "모율",
+    "age": "20",
+    "bodytype": "170/55/B",
+    "img": "537.png"
+  },
+  {
+    "name": "미비",
+    "age": "27",
+    "bodytype": "167/52/D",
+    "img": "538.png"
+  },
+  {
+    "name": "은리",
+    "age": "21",
+    "bodytype": "166/51/D",
+    "img": "539.png"
+  },
+  {
+    "name": "다예",
+    "age": "27",
+    "bodytype": "167/52/A",
+    "img": "540.png"
+  },
+  {
+    "name": "소아",
+    "age": "23",
+    "bodytype": "165/50/C",
+    "img": "541.png"
+  },
+  {
+    "name": "이연",
+    "age": "25",
+    "bodytype": "164/49/D",
+    "img": "542.png"
+  }
+]

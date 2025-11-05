@@ -1,0 +1,74 @@
+[
+  {
+    "name": "슬라",
+    "age": "23",
+    "bodytype": "168/53/D",
+    "img": "39.png"
+  },
+  {
+    "name": "모솔",
+    "age": "21",
+    "bodytype": "166/51/D",
+    "img": "40.png"
+  },
+  {
+    "name": "루희",
+    "age": "24",
+    "bodytype": "166/51/B",
+    "img": "41.png"
+  },
+  {
+    "name": "이아",
+    "age": "22",
+    "bodytype": "168/53/A",
+    "img": "42.png"
+  },
+  {
+    "name": "하샘",
+    "age": "25",
+    "bodytype": "166/51/E",
+    "img": "43.png"
+  },
+  {
+    "name": "루봄",
+    "age": "26",
+    "bodytype": "170/55/A",
+    "img": "44.png"
+  },
+  {
+    "name": "리별",
+    "age": "25",
+    "bodytype": "161/46/E",
+    "img": "45.png"
+  },
+  {
+    "name": "하벨",
+    "age": "20",
+    "bodytype": "162/47/A",
+    "img": "46.png"
+  },
+  {
+    "name": "유민",
+    "age": "22",
+    "bodytype": "168/53/C",
+    "img": "47.png"
+  },
+  {
+    "name": "슬예",
+    "age": "21",
+    "bodytype": "168/53/C",
+    "img": "48.png"
+  },
+  {
+    "name": "도비",
+    "age": "20",
+    "bodytype": "170/55/B",
+    "img": "49.png"
+  },
+  {
+    "name": "아빈",
+    "age": "24",
+    "bodytype": "163/48/B",
+    "img": "50.png"
+  }
+]

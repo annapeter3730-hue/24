@@ -1,0 +1,56 @@
+[
+  {
+    "name": "서현",
+    "age": 24,
+    "bodytype": "164/47/C",
+    "img": "173.png"
+  },
+  {
+    "name": "민라",
+    "age": 22,
+    "bodytype": "160/44/B",
+    "img": "174.png"
+  },
+  {
+    "name": "주별",
+    "age": 25,
+    "bodytype": "167/49/D",
+    "img": "175.png"
+  },
+  {
+    "name": "모안",
+    "age": 23,
+    "bodytype": "162/45/B",
+    "img": "176.png"
+  },
+  {
+    "name": "수민",
+    "age": 21,
+    "bodytype": "158/43/A",
+    "img": "177.png"
+  },
+  {
+    "name": "라진",
+    "age": 27,
+    "bodytype": "165/48/C",
+    "img": "178.png"
+  },
+  {
+    "name": "나샘",
+    "age": 26,
+    "bodytype": "168/50/D",
+    "img": "179.png"
+  },
+  {
+    "name": "로채",
+    "age": 24,
+    "bodytype": "163/46/B",
+    "img": "180.png"
+  },
+  {
+    "name": "지진",
+    "age": 22,
+    "bodytype": "161/44/C",
+    "img": "181.png"
+  }
+]

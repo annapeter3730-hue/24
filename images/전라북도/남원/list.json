@@ -1,0 +1,32 @@
+[
+  {
+    "name": "연진",
+    "age": "28",
+    "bodytype": "163/48/B",
+    "img": "497.png"
+  },
+  {
+    "name": "아벨",
+    "age": "25",
+    "bodytype": "169/54/C",
+    "img": "498.png"
+  },
+  {
+    "name": "가라",
+    "age": "20",
+    "bodytype": "164/49/B",
+    "img": "499.png"
+  },
+  {
+    "name": "지벨",
+    "age": "23",
+    "bodytype": "164/49/E",
+    "img": "500.png"
+  },
+  {
+    "name": "라민",
+    "age": "28",
+    "bodytype": "167/52/C",
+    "img": "501.png"
+  }
+]

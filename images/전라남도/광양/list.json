@@ -1,0 +1,32 @@
+[
+  {
+    "name": "예현",
+    "age": "24",
+    "bodytype": "170/55/B",
+    "img": "444.png"
+  },
+  {
+    "name": "모현",
+    "age": "23",
+    "bodytype": "165/50/B",
+    "img": "445.png"
+  },
+  {
+    "name": "리벨",
+    "age": "24",
+    "bodytype": "167/52/B",
+    "img": "446.png"
+  },
+  {
+    "name": "혜영",
+    "age": "28",
+    "bodytype": "162/47/C",
+    "img": "447.png"
+  },
+  {
+    "name": "연영",
+    "age": "21",
+    "bodytype": "166/51/E",
+    "img": "448.png"
+  }
+]

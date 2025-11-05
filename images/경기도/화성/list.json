@@ -1,0 +1,50 @@
+[
+  {
+    "name": "라연",
+    "age": 23,
+    "bodytype": "162/46/B",
+    "img": "235.png"
+  },
+  {
+    "name": "연벨",
+    "age": 24,
+    "bodytype": "164/47/C",
+    "img": "236.png"
+  },
+  {
+    "name": "세영",
+    "age": 25,
+    "bodytype": "161/45/B",
+    "img": "237.png"
+  },
+  {
+    "name": "혜진",
+    "age": 22,
+    "bodytype": "165/49/D",
+    "img": "238.png"
+  },
+  {
+    "name": "다라",
+    "age": 27,
+    "bodytype": "163/48/C",
+    "img": "239.png"
+  },
+  {
+    "name": "슬비",
+    "age": 26,
+    "bodytype": "166/50/D",
+    "img": "240.png"
+  },
+  {
+    "name": "지엘",
+    "age": 25,
+    "bodytype": "160/44/B",
+    "img": "241.png"
+  },
+  {
+    "name": "다혜",
+    "age": 23,
+    "bodytype": "167/49/C",
+    "img": "242.png"
+  }
+]

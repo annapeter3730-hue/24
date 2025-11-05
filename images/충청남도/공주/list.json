@@ -1,0 +1,32 @@
+[
+  {
+    "name": "시아",
+    "age": "23",
+    "bodytype": "167/52/E",
+    "img": "531.png"
+  },
+  {
+    "name": "미솔",
+    "age": "23",
+    "bodytype": "164/49/C",
+    "img": "532.png"
+  },
+  {
+    "name": "채현",
+    "age": "23",
+    "bodytype": "170/55/A",
+    "img": "533.png"
+  },
+  {
+    "name": "리해",
+    "age": "24",
+    "bodytype": "170/55/D",
+    "img": "534.png"
+  },
+  {
+    "name": "예샘",
+    "age": "21",
+    "bodytype": "163/48/E",
+    "img": "535.png"
+  }
+]

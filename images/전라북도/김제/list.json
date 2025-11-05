@@ -1,0 +1,44 @@
+[
+  {
+    "name": "지현",
+    "age": "25",
+    "bodytype": "167/52/A",
+    "img": "490.png"
+  },
+  {
+    "name": "민희",
+    "age": "26",
+    "bodytype": "170/55/B",
+    "img": "491.png"
+  },
+  {
+    "name": "나벨",
+    "age": "27",
+    "bodytype": "170/55/C",
+    "img": "492.png"
+  },
+  {
+    "name": "도리",
+    "age": "25",
+    "bodytype": "160/45/E",
+    "img": "493.png"
+  },
+  {
+    "name": "소리",
+    "age": "23",
+    "bodytype": "163/48/C",
+    "img": "494.png"
+  },
+  {
+    "name": "지빈",
+    "age": "22",
+    "bodytype": "165/50/D",
+    "img": "495.png"
+  },
+  {
+    "name": "로리",
+    "age": "26",
+    "bodytype": "167/52/B",
+    "img": "496.png"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "혜안",
+    "age": "23",
+    "bodytype": "165/50/E",
+    "img": "577.png"
+  },
+  {
+    "name": "미원",
+    "age": "22",
+    "bodytype": "165/50/E",
+    "img": "578.png"
+  },
+  {
+    "name": "채예",
+    "age": "21",
+    "bodytype": "164/49/B",
+    "img": "579.png"
+  },
+  {
+    "name": "모유",
+    "age": "26",
+    "bodytype": "161/46/B",
+    "img": "580.png"
+  },
+  {
+    "name": "하라",
+    "age": "24",
+    "bodytype": "169/54/A",
+    "img": "581.png"
+  }
+]

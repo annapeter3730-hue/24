@@ -1,0 +1,50 @@
+[
+  {
+    "name": "서별",
+    "age": 26,
+    "bodytype": "163/42/B",
+    "img": "146.png"
+  },
+  {
+    "name": "서해",
+    "age": 21,
+    "bodytype": "164/45/C",
+    "img": "147.png"
+  },
+  {
+    "name": "예빈",
+    "age": 24,
+    "bodytype": "161/41/B",
+    "img": "148.png"
+  },
+  {
+    "name": "다연",
+    "age": 27,
+    "bodytype": "168/49/C",
+    "img": "149.png"
+  },
+  {
+    "name": "연리",
+    "age": 22,
+    "bodytype": "160/41/B",
+    "img": "150.png"
+  },
+  {
+    "name": "미영",
+    "age": 23,
+    "bodytype": "162/44/B",
+    "img": "151.png"
+  },
+  {
+    "name": "나윤",
+    "age": 28,
+    "bodytype": "162/43/B",
+    "img": "152.png"
+  },
+  {
+    "name": "아림",
+    "age": 25,
+    "bodytype": "169/49/D",
+    "img": "153.png"
+  }
+]

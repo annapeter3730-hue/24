@@ -1,0 +1,32 @@
+[
+  {
+    "name": "도현",
+    "age": "23",
+    "bodytype": "161/46/A",
+    "img": "567.png"
+  },
+  {
+    "name": "리람",
+    "age": "26",
+    "bodytype": "160/45/D",
+    "img": "568.png"
+  },
+  {
+    "name": "서벨",
+    "age": "27",
+    "bodytype": "169/54/A",
+    "img": "569.png"
+  },
+  {
+    "name": "은윤",
+    "age": "21",
+    "bodytype": "166/51/C",
+    "img": "570.png"
+  },
+  {
+    "name": "서안",
+    "age": "24",
+    "bodytype": "164/49/C",
+    "img": "571.png"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "로진",
+    "age": "25",
+    "bodytype": "163/48/D",
+    "img": "456.png"
+  },
+  {
+    "name": "윤아",
+    "age": "25",
+    "bodytype": "163/48/A",
+    "img": "457.png"
+  },
+  {
+    "name": "아람",
+    "age": "23",
+    "bodytype": "164/49/D",
+    "img": "458.png"
+  },
+  {
+    "name": "채별",
+    "age": "23",
+    "bodytype": "165/50/B",
+    "img": "459.png"
+  },
+  {
+    "name": "시빈",
+    "age": "22",
+    "bodytype": "162/47/B",
+    "img": "460.png"
+  },
+  {
+    "name": "보주",
+    "age": "27",
+    "bodytype": "161/46/C",
+    "img": "461.png"
+  }
+]

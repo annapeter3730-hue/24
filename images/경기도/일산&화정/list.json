@@ -1,0 +1,74 @@
+[
+  {
+    "name": "라별",
+    "age": 23,
+    "bodytype": "161/44/B",
+    "img": "194.png"
+  },
+  {
+    "name": "하늘",
+    "age": 25,
+    "bodytype": "167/49/C",
+    "img": "195.png"
+  },
+  {
+    "name": "민하",
+    "age": 22,
+    "bodytype": "159/43/A",
+    "img": "196.png"
+  },
+  {
+    "name": "하봄",
+    "age": 26,
+    "bodytype": "165/48/C",
+    "img": "197.png"
+  },
+  {
+    "name": "윤봄",
+    "age": 24,
+    "bodytype": "163/46/B",
+    "img": "198.png"
+  },
+  {
+    "name": "로주",
+    "age": 27,
+    "bodytype": "168/50/D",
+    "img": "199.png"
+  },
+  {
+    "name": "도해",
+    "age": 21,
+    "bodytype": "160/42/B",
+    "img": "200.png"
+  },
+  {
+    "name": "보채",
+    "age": 25,
+    "bodytype": "164/47/C",
+    "img": "201.png"
+  },
+  {
+    "name": "시해",
+    "age": 23,
+    "bodytype": "162/45/B",
+    "img": "202.png"
+  },
+  {
+    "name": "민비",
+    "age": 22,
+    "bodytype": "161/44/C",
+    "img": "203.png"
+  },
+  {
+    "name": "민람",
+    "age": 26,
+    "bodytype": "166/49/D",
+    "img": "204.png"
+  },
+  {
+    "name": "시채",
+    "age": 24,
+    "bodytype": "165/47/C",
+    "img": "205.png"
+  }
+]

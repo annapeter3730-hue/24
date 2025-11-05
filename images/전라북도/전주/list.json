@@ -1,0 +1,32 @@
+[
+  {
+    "name": "예벨",
+    "age": "27",
+    "bodytype": "170/55/D",
+    "img": "508.png"
+  },
+  {
+    "name": "은율",
+    "age": "25",
+    "bodytype": "162/47/E",
+    "img": "509.png"
+  },
+  {
+    "name": "예연",
+    "age": "21",
+    "bodytype": "162/47/C",
+    "img": "510.png"
+  },
+  {
+    "name": "윤빈",
+    "age": "21",
+    "bodytype": "168/53/E",
+    "img": "511.png"
+  },
+  {
+    "name": "윤주",
+    "age": "28",
+    "bodytype": "162/47/C",
+    "img": "512.png"
+  }
+]

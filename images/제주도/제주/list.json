@@ -1,0 +1,38 @@
+[
+  {
+    "name": "은벨",
+    "age": "27",
+    "bodytype": "168/53/E",
+    "img": "607.png"
+  },
+  {
+    "name": "연솔",
+    "age": "23",
+    "bodytype": "162/47/C",
+    "img": "608.png"
+  },
+  {
+    "name": "라정",
+    "age": "27",
+    "bodytype": "167/52/C",
+    "img": "609.png"
+  },
+  {
+    "name": "은희",
+    "age": "20",
+    "bodytype": "167/52/C",
+    "img": "610.png"
+  },
+  {
+    "name": "미진",
+    "age": "24",
+    "bodytype": "167/52/B",
+    "img": "611.png"
+  },
+  {
+    "name": "혜빈",
+    "age": "25",
+    "bodytype": "168/53/A",
+    "img": "612.png"
+  }
+]

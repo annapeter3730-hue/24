@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전국출장24 TOP - 지역안내</title>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #98a0b3;
+      --gold: #c79a3b;
+      --accent: #e9b864;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #071028 0%, #091426 45%, #06101b 100%);
+      color: #e6eef8;
+      font-family: "Noto Sans KR", system-ui;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header { margin-bottom: 20px; text-align: center; }
+    header h1 { font-size: 22px; margin: 6px 0; }
+    header p { color: var(--muted); font-size: 14px; margin: 0; }
+
+    .container { max-width: 1100px; width: 100%; }
+    .tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 20px; }
+    .tab {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 14px;
+      border-radius: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: .2s;
+    }
+    .tab.active {
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      color: #07101b;
+      transform: translateY(-2px);
+    }
+
+    .region-list, .city-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .region, .city, .back-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: .2s;
+    }
+    .region:hover, .city:hover, .back-btn:hover {
+      background: rgba(233,184,100,0.12);
+    }
+    .back-btn { color: var(--accent); margin-bottom: 10px; }
+
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .profile {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: .2s;
+    }
+    .profile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+    .profile img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+    .profile h3 { margin: 0; font-size: 15px; }
+    .profile p { margin: 2px 0; font-size: 13px; color: var(--muted); }
+
+    .empty { text-align: center; color: var(--muted); margin-top: 20px; }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal.active { display: flex; }
+    .modal-content {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 16px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+    }
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      font-size: 26px;
+      color: #ccc;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    @media(max-width:600px) {
+      .profile img { height: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>전국출장24 TOP</h1>
+    <p>지역안내</p>
+  </header>
+
+  <div class="container">
+    <div class="tabs">
+      <div class="tab active" data-tab="region">지역안내</div>
+      <div class="tab" data-tab="course">코스별안내</div>
+      <div class="tab" data-tab="notice">공지사항</div>
+    </div>
+
+    <div id="region" class="content active">
+      <div class="region-list" id="regionList"></div>
+      <div class="city-list" id="cityList"></div>
+      <div class="profiles" id="profiles"></div>
+    </div>
+
+    <div id="course" class="content" style="display:none;text-align:center;">코스별 안내 준비중입니다.</div>
+    <div id="notice" class="content" style="display:none;text-align:center;">공지사항이 없습니다.</div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="닫기">&times;</button>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalName"></h3>
+      <p id="modalAge"></p>
+      <p id="modalBody"></p>
+    </div>
+  </div>
+
+  <script>
+    const data = {
+      "광역시": ["광주","대구","대전","부산","서울","세종","울산","인천"],
+      "강원도": ["강릉","동해","삼척","속초","원주","정선","춘천","태백","홍천"],
+      "경상남도": ["거제","김해","밀양","사천","양산","의령","진주","창원","통영","합천"],
+      "경상북도": ["경산","경주","구미","김천","문경","상주","안동","영덕","영주","영천","포항"],
+      "충청북도": ["제천","청주","충주"],
+      "충청남도": ["계릉","공주","논산","당진","보령","부여","서산","아산","천안","태안"],
+      "전라남도": ["광양","나주","목포","무안","순천","여수","해남"],
+      "전라북도": ["군산","김제","남원","부안","익산","전주","정읍"],
+      "경기도": ["가평&청평","구리&남양주","김포","동두천","부천","성남","수원","안산&시흥","연천","용인","의정부&포천","이천","일산&화정","파주","평택","하남","화성"],
+      "제주도": ["제주","서귀포"]
+    };
+
+    const regionList=document.getElementById("regionList");
+    const cityList=document.getElementById("cityList");
+    const profilesDiv=document.getElementById("profiles");
+
+    // ✅ 지역 목록 표시
+    Object.keys(data).forEach(region=>{
+      const div=document.createElement("div");
+      div.className="region";
+      div.textContent=region;
+      div.onclick=()=>showCities(region);
+      regionList.appendChild(div);
+    });
+
+    // ✅ 도시 목록 표시
+    function showCities(region){
+      cityList.innerHTML="";
+      profilesDiv.innerHTML="";
+      regionList.style.display="none";
+
+      const back=document.createElement("div");
+      back.className="back-btn";
+      back.textContent="← 뒤로가기";
+      back.onclick=()=>{
+        regionList.style.display="flex";
+        cityList.innerHTML="";
+        profilesDiv.innerHTML="";
+      };
+      cityList.appendChild(back);
+
+      data[region].forEach(city=>{
+        const div=document.createElement("div");
+        div.className="city";
+        div.textContent=city;
+        div.onclick=()=>showProfiles(region,city);
+        cityList.appendChild(div);
+      });
+    }
+
+    // ✅ 프로필 표시
+    async function showProfiles(region,city){
+      profilesDiv.innerHTML="";
+      try{
+        const path=`24/images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
+        const res=await fetch(path);
+        const profiles=await res.json();
+
+        profiles.forEach(p=>{
+          const imgPath=`24/images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+          const card=document.createElement("div");
+          card.className="profile";
+          card.innerHTML=`
+            <img src="${imgPath}" alt="${p.name}">
+            <h3>${p.name}</h3>
+            <p>AGE: ${p.age}</p>
+            <p>BODYTYPE: ${p.bodytype}</p>
+          `;
+          card.onclick=()=>openModal(p,region,city);
+          profilesDiv.appendChild(card);
+        });
+      }catch(e){
+        profilesDiv.innerHTML=`<div class="empty">⚠️ ${city} 지역 데이터가 없습니다.</div>`;
+      }
+    }
+
+    // ✅ 첫 화면 랜덤 프로필
+    async function loadRandomProfiles(){
+      const allRegions=Object.keys(data);
+      const randomProfiles=[];
+      const shuffled=allRegions.sort(()=>Math.random()-0.5).slice(0,10);
+
+      for(const region of shuffled){
+        const cities=data[region];
+        const city=cities[Math.floor(Math.random()*cities.length)];
+        try{
+          const path=`24/images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
+          const res=await fetch(path);
+          const list=await res.json();
+          if(list.length>0){
+            const p=list[Math.floor(Math.random()*list.length)];
+            randomProfiles.push({...p,region,city});
+          }
+        }catch{}
+      }
+
+      profilesDiv.innerHTML="";
+      randomProfiles.forEach(p=>{
+        const imgPath=`24/images/${p.region}/${p.city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+        const card=document.createElement("div");
+        card.className="profile";
+        card.innerHTML=`
+          <img src="${imgPath}" alt="${p.name}">
+          <h3>${p.name}</h3>
+          <p>${p.region} / ${p.city}</p>
+          <p>AGE: ${p.age}</p>
+        `;
+        card.onclick=()=>openModal(p,p.region,p.city);
+        profilesDiv.appendChild(card);
+      });
+    }
+    loadRandomProfiles();
+
+    // ✅ 모달
+    const modal=document.getElementById("modal");
+    const modalImg=document.getElementById("modalImg");
+    const modalName=document.getElementById("modalName");
+    const modalAge=document.getElementById("modalAge");
+    const modalBody=document.getElementById("modalBody");
+    const closeBtn=document.querySelector(".close-btn");
+
+    function openModal(p,region,city){
+      modal.classList.add("active");
+      const imgPath=`24/images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+      modalImg.src=imgPath;
+      modalName.textContent=p.name;
+      modalAge.textContent=`AGE: ${p.age}`;
+      modalBody.textContent=`BODYTYPE: ${p.bodytype}`;
+    }
+
+    closeBtn.onclick=()=>modal.classList.remove("active");
+    modal.onclick=e=>{if(e.target===modal)modal.classList.remove("active");};
+
+    // ✅ 탭 전환
+    document.querySelectorAll(".tab").forEach(tab=>{
+      tab.onclick=()=>{
+        document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
+        tab.classList.add("active");
+        document.querySelectorAll(".content").forEach(c=>c.style.display="none");
+        document.getElementById(tab.dataset.tab).style.display="block";
+      };
+    });
+  </script>
+</body>
+</html>

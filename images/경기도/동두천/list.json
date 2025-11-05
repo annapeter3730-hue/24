@@ -1,0 +1,50 @@
+[
+  {
+    "name": "나희",
+    "age": 25,
+    "bodytype": "164/47/C",
+    "img": "243.png"
+  },
+  {
+    "name": "도연",
+    "age": 21,
+    "bodytype": "158/49/B",
+    "img": "244.png"
+  },
+  {
+    "name": "루주",
+    "age": 26,
+    "bodytype": "162/45/A",
+    "img": "245.png"
+  },
+  {
+    "name": "하민",
+    "age": 24,
+    "bodytype": "167/50/D",
+    "img": "246.png"
+  },
+  {
+    "name": "슬빈",
+    "age": 23,
+    "bodytype": "156/43/C",
+    "img": "247.png"
+  },
+  {
+    "name": "유라",
+    "age": 22,
+    "bodytype": "160/48/A",
+    "img": "248.png"
+  },
+  {
+    "name": "다엘",
+    "age": 27,
+    "bodytype": "165/46/D",
+    "img": "249.png"
+  },
+  {
+    "name": "서정",
+    "age": 20,
+    "bodytype": "157/41/B",
+    "img": "250.png"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "하엘",
+    "age": "23",
+    "bodytype": "161/44/B",
+    "img": "310.png"
+  },
+  {
+    "name": "세빈",
+    "age": "24",
+    "bodytype": "165/47/C",
+    "img": "311.png"
+  },
+  {
+    "name": "나율",
+    "age": "27",
+    "bodytype": "170/50/D",
+    "img": "312.png"
+  },
+  {
+    "name": "아린서",
+    "age": "22",
+    "bodytype": "159/43/B",
+    "img": "313.png"
+  },
+  {
+    "name": "유담",
+    "age": "26",
+    "bodytype": "167/49/C",
+    "img": "314.png"
+  },
+  {
+    "name": "지아",
+    "age": "25",
+    "bodytype": "163/46/B",
+    "img": "315.png"
+  },
+  {
+    "name": "소이",
+    "age": "24",
+    "bodytype": "164/47/C",
+    "img": "316.png"
+  }
+]

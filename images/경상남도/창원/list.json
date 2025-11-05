@@ -1,0 +1,44 @@
+[
+  {
+    "name": "시연",
+    "age": "25",
+    "bodytype": "170/55/A",
+    "img": "353.png"
+  },
+  {
+    "name": "은지",
+    "age": "23",
+    "bodytype": "163/48/C",
+    "img": "354.png"
+  },
+  {
+    "name": "유해",
+    "age": "26",
+    "bodytype": "162/47/E",
+    "img": "355.png"
+  },
+  {
+    "name": "다현아",
+    "age": "24",
+    "bodytype": "161/46/D",
+    "img": "356.png"
+  },
+  {
+    "name": "혜인",
+    "age": "27",
+    "bodytype": "165/50/D",
+    "img": "357.png"
+  },
+  {
+    "name": "이진",
+    "age": "22",
+    "bodytype": "161/46/B",
+    "img": "358.png"
+  },
+  {
+    "name": "가민",
+    "age": "25",
+    "bodytype": "167/52/A",
+    "img": "359.png"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "채아",
+    "age": "24",
+    "bodytype": "163/46/B",
+    "img": "317.png"
+  },
+  {
+    "name": "혜주",
+    "age": "26",
+    "bodytype": "168/49/C",
+    "img": "318.png"
+  },
+  {
+    "name": "다원",
+    "age": "22",
+    "bodytype": "160/44/B",
+    "img": "319.png"
+  },
+  {
+    "name": "미봄",
+    "age": "25",
+    "bodytype": "165/47/C",
+    "img": "320.png"
+  },
+  {
+    "name": "예정",
+    "age": "23",
+    "bodytype": "162/45/B",
+    "img": "321.png"
+  },
+  {
+    "name": "모민",
+    "age": "27",
+    "bodytype": "169/50/D",
+    "img": "322.png"
+  },
+  {
+    "name": "연유",
+    "age": "24",
+    "bodytype": "164/46/C",
+    "img": "323.png"
+  }
+]

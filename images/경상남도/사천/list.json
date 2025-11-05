@@ -1,0 +1,38 @@
+[
+  {
+    "name": "가린",
+    "age": "25",
+    "bodytype": "164/46/C",
+    "img": "337.png"
+  },
+  {
+    "name": "가연",
+    "age": "22",
+    "bodytype": "160/45/B",
+    "img": "338.png"
+  },
+  {
+    "name": "도채",
+    "age": "23",
+    "bodytype": "162/47/C",
+    "img": "339.png"
+  },
+  {
+    "name": "루해",
+    "age": "26",
+    "bodytype": "168/50/D",
+    "img": "340.png"
+  },
+  {
+    "name": "주율",
+    "age": "21",
+    "bodytype": "157/44/B",
+    "img": "341.png"
+  },
+  {
+    "name": "소윤",
+    "age": "27",
+    "bodytype": "170/49/D",
+    "img": "342.png"
+  }
+]

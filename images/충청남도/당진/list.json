@@ -1,0 +1,32 @@
+[
+  {
+    "name": "주안",
+    "age": "21",
+    "bodytype": "165/50/B",
+    "img": "543.png"
+  },
+  {
+    "name": "가별",
+    "age": "28",
+    "bodytype": "162/47/C",
+    "img": "544.png"
+  },
+  {
+    "name": "도정",
+    "age": "21",
+    "bodytype": "162/47/D",
+    "img": "545.png"
+  },
+  {
+    "name": "시샘",
+    "age": "25",
+    "bodytype": "164/49/B",
+    "img": "546.png"
+  },
+  {
+    "name": "수유",
+    "age": "27",
+    "bodytype": "161/46/A",
+    "img": "547.png"
+  }
+]

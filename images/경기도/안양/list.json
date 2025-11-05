@@ -1,0 +1,68 @@
+[
+  {
+    "name": "윤리",
+    "age": 25,
+    "bodytype": "160/48/C",
+    "img": "153.png"
+  },
+  {
+    "name": "연빈",
+    "age": 26,
+    "bodytype": "161/47/D",
+    "img": "154.png"
+  },
+  {
+    "name": "라원",
+    "age": 27,
+    "bodytype": "162/49/C",
+    "img": "155.png"
+  },
+  {
+    "name": "소담",
+    "age": 26,
+    "bodytype": "163/50/D",
+    "img": "156.png"
+  },
+  {
+    "name": "아연",
+    "age": 25,
+    "bodytype": "160/46/C",
+    "img": "157.png"
+  },
+  {
+    "name": "유솔",
+    "age": 23,
+    "bodytype": "165/52/E",
+    "img": "158.png"
+  },
+  {
+    "name": "슬민",
+    "age": 24,
+    "bodytype": "162/50/D",
+    "img": "159.png"
+  },
+  {
+    "name": "해윤",
+    "age": 26,
+    "bodytype": "163/47/C",
+    "img": "160.png"
+  },
+  {
+    "name": "혜율",
+    "age": 27,
+    "bodytype": "164/49/D",
+    "img": "161.png"
+  },
+  {
+    "name": "민결",
+    "age": 24,
+    "bodytype": "165/48/C",
+    "img": "162.png"
+  },
+  {
+    "name": "예아",
+    "age": 22,
+    "bodytype": "166/50/D",
+    "img": "163.png"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "도유",
+    "age": 25,
+    "bodytype": "164/47/C",
+    "img": "182.png"
+  },
+  {
+    "name": "서아",
+    "age": 22,
+    "bodytype": "160/44/B",
+    "img": "183.png"
+  },
+  {
+    "name": "시진",
+    "age": 23,
+    "bodytype": "166/48/D",
+    "img": "184.png"
+  },
+  {
+    "name": "지슬",
+    "age": 24,
+    "bodytype": "163/46/B",
+    "img": "185.png"
+  },
+  {
+    "name": "소봄",
+    "age": 26,
+    "bodytype": "165/49/C",
+    "img": "186.png"
+  },
+  {
+    "name": "다람",
+    "age": 21,
+    "bodytype": "159/42/A",
+    "img": "187.png"
+  },
+  {
+    "name": "이정",
+    "age": 27,
+    "bodytype": "167/50/D",
+    "img": "188.png"
+  },
+  {
+    "name": "다슬",
+    "age": 25,
+    "bodytype": "162/45/C",
+    "img": "189.png"
+  },
+  {
+    "name": "주예",
+    "age": 23,
+    "bodytype": "161/43/B",
+    "img": "190.png"
+  },
+  {
+    "name": "연우",
+    "age": 26,
+    "bodytype": "168/51/D",
+    "img": "191.png"
+  },
+  {
+    "name": "채빈",
+    "age": 24,
+    "bodytype": "164/47/B",
+    "img": "192.png"
+  },
+  {
+    "name": "수아",
+    "age": 22,
+    "bodytype": "160/44/C",
+    "img": "193.png"
+  }
+]

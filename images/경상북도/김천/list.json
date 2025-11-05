@@ -1,0 +1,32 @@
+[
+  {
+    "name": "지윤",
+    "age": "25",
+    "bodytype": "170/55/A",
+    "img": "398.png"
+  },
+  {
+    "name": "윤정",
+    "age": "22",
+    "bodytype": "169/54/C",
+    "img": "399.png"
+  },
+  {
+    "name": "나린",
+    "age": "26",
+    "bodytype": "164/49/A",
+    "img": "400.png"
+  },
+  {
+    "name": "루솔",
+    "age": "23",
+    "bodytype": "161/46/D",
+    "img": "401.png"
+  },
+  {
+    "name": "채솔",
+    "age": "25",
+    "bodytype": "169/54/B",
+    "img": "402.png"
+  }
+]

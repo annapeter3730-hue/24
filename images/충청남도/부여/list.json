@@ -1,0 +1,32 @@
+[
+  {
+    "name": "소라",
+    "age": "24",
+    "bodytype": "166/51/E",
+    "img": "572.png"
+  },
+  {
+    "name": "이비",
+    "age": "24",
+    "bodytype": "169/54/B",
+    "img": "573.png"
+  },
+  {
+    "name": "윤현",
+    "age": "24",
+    "bodytype": "169/54/C",
+    "img": "574.png"
+  },
+  {
+    "name": "소솔",
+    "age": "24",
+    "bodytype": "163/48/E",
+    "img": "575.png"
+  },
+  {
+    "name": "미빈",
+    "age": "24",
+    "bodytype": "169/54/D",
+    "img": "576.png"
+  }
+]

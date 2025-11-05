@@ -1,0 +1,32 @@
+[
+  {
+    "name": "유현",
+    "age": "24",
+    "bodytype": "164/49/D",
+    "img": "410.png"
+  },
+  {
+    "name": "하현",
+    "age": "25",
+    "bodytype": "160/45/D",
+    "img": "411.png"
+  },
+  {
+    "name": "슬안",
+    "age": "23",
+    "bodytype": "160/45/A",
+    "img": "412.png"
+  },
+  {
+    "name": "혜예",
+    "age": "26",
+    "bodytype": "170/55/D",
+    "img": "413.png"
+  },
+  {
+    "name": "민정",
+    "age": "27",
+    "bodytype": "160/45/D",
+    "img": "414.png"
+  }
+]

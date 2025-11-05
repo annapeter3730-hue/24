@@ -1,0 +1,50 @@
+[
+  {
+    "name": "지수",
+    "age": 24,
+    "bodytype": "162/46/C",
+    "img": "165.png"
+  },
+  {
+    "name": "민진",
+    "age": 22,
+    "bodytype": "160/45/B",
+    "img": "166.png"
+  },
+  {
+    "name": "지라",
+    "age": 26,
+    "bodytype": "165/48/D",
+    "img": "167.png"
+  },
+  {
+    "name": "유진",
+    "age": 23,
+    "bodytype": "163/47/C",
+    "img": "168.png"
+  },
+  {
+    "name": "아예",
+    "age": 25,
+    "bodytype": "166/49/D",
+    "img": "169.png"
+  },
+  {
+    "name": "예림",
+    "age": 21,
+    "bodytype": "159/43/B",
+    "img": "170.png"
+  },
+  {
+    "name": "미아",
+    "age": 27,
+    "bodytype": "168/50/C",
+    "img": "171.png"
+  },
+  {
+    "name": "나람",
+    "age": 24,
+    "bodytype": "161/45/B",
+    "img": "172.png"
+  }
+]

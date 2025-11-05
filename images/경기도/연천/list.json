@@ -1,0 +1,68 @@
+[
+  {
+    "name": "유화",
+    "age": 25,
+    "bodytype": "160/48/C",
+    "img": "153.png"
+  },
+  {
+    "name": "해온",
+    "age": 26,
+    "bodytype": "161/47/D",
+    "img": "154.png"
+  },
+  {
+    "name": "미하",
+    "age": 27,
+    "bodytype": "162/49/C",
+    "img": "155.png"
+  },
+  {
+    "name": "수담",
+    "age": 26,
+    "bodytype": "163/50/D",
+    "img": "156.png"
+  },
+  {
+    "name": "시유",
+    "age": 25,
+    "bodytype": "160/46/C",
+    "img": "157.png"
+  },
+  {
+    "name": "세하",
+    "age": 23,
+    "bodytype": "165/52/E",
+    "img": "158.png"
+  },
+  {
+    "name": "정아",
+    "age": 24,
+    "bodytype": "162/50/D",
+    "img": "159.png"
+  },
+  {
+    "name": "하솔",
+    "age": 26,
+    "bodytype": "163/47/C",
+    "img": "160.png"
+  },
+  {
+    "name": "유린",
+    "age": 27,
+    "bodytype": "164/49/D",
+    "img": "161.png"
+  },
+  {
+    "name": "나해",
+    "age": 24,
+    "bodytype": "165/48/C",
+    "img": "162.png"
+  },
+  {
+    "name": "제희",
+    "age": 22,
+    "bodytype": "166/50/D",
+    "img": "163.png"
+  }
+]
