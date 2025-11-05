@@ -222,15 +222,15 @@
     async function showProfiles(region,city){
       profilesDiv.innerHTML="";
       try{
-        const res=await fetch(`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
+        const res=await fetch(`images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
         const profiles=await res.json();
 
         profiles.forEach(p=>{
-          const imgPath=`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/${encodeURIComponent(p.img)}`;
+          const imgPath=`images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/${encodeURIComponent(p.img)}`;
           const card=document.createElement("div");
           card.className="profile";
           card.innerHTML=`
-            <img src="${imgPath}" alt="${p.name}">
+            <img src=\"${imgPath}\" alt=\"${p.name}\">
             <h3>${p.name}</h3>
             <p>AGE: ${p.age}</p>
             <p>BODYTYPE: ${p.bodytype}</p>
@@ -239,7 +239,7 @@
           profilesDiv.appendChild(card);
         });
       }catch(e){
-        profilesDiv.innerHTML=`<div class="empty">⚠️ ${city} 지역 데이터가 없습니다.</div>`;
+        profilesDiv.innerHTML=`<div class=\"empty\">⚠️ ${city} 지역 데이터가 없습니다.</div>`;
       }
     }
 
@@ -252,7 +252,7 @@
         const cities=data[region];
         const city=cities[Math.floor(Math.random()*cities.length)];
         try{
-          const res=await fetch(`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
+          const res=await fetch(`images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
           const list=await res.json();
           if(list.length>0){
             const p=list[Math.floor(Math.random()*list.length)];
@@ -263,11 +263,11 @@
 
       profilesDiv.innerHTML="";
       randomProfiles.forEach(p=>{
-        const imgPath=`24/images/${encodeURIComponent(p.region)}/${encodeURIComponent(p.city)}/${encodeURIComponent(p.img)}`;
+        const imgPath=`images/${encodeURIComponent(p.region)}/${encodeURIComponent(p.city)}/${encodeURIComponent(p.img)}`;
         const card=document.createElement("div");
         card.className="profile";
         card.innerHTML=`
-          <img src="${imgPath}" alt="${p.name}">
+          <img src=\"${imgPath}\" alt=\"${p.name}\">
           <h3>${p.name}</h3>
           <p>${p.region} / ${p.city}</p>
           <p>AGE: ${p.age}</p>
@@ -288,7 +288,7 @@
 
     function openModal(p,region,city){
       modal.classList.add("active");
-      const imgPath=`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/${encodeURIComponent(p.img)}`;
+      const imgPath=`images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/${encodeURIComponent(p.img)}`;
       modalImg.src=imgPath;
       modalName.textContent=p.name;
       modalAge.textContent=`AGE: ${p.age}`;
