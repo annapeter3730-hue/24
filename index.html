@@ -225,12 +225,12 @@
     async function showProfiles(region,city){
       profilesDiv.innerHTML="";
       try{
-        const path=`images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
+        const path=`24/images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
         const res=await fetch(path);
         const profiles=await res.json();
 
         profiles.forEach(p=>{
-          const imgPath=`images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+          const imgPath=`24/images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
           const card=document.createElement("div");
           card.className="profile";
           card.innerHTML=`
@@ -247,7 +247,7 @@
       }
     }
 
-    // ✅ 첫 화면 랜덤 프로필
+    // ✅ 첫 화면 랜덤 프로필 (AGE + BODYTYPE 둘 다 표시)
     async function loadRandomProfiles(){
       const allRegions=Object.keys(data);
       const randomProfiles=[];
@@ -257,7 +257,7 @@
         const cities=data[region];
         const city=cities[Math.floor(Math.random()*cities.length)];
         try{
-          const path=`images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
+          const path=`24/images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
           const res=await fetch(path);
           const list=await res.json();
           if(list.length>0){
@@ -269,7 +269,7 @@
 
       profilesDiv.innerHTML="";
       randomProfiles.forEach(p=>{
-        const imgPath=`images/${p.region}/${p.city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+        const imgPath=`24/images/${p.region}/${p.city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
         const card=document.createElement("div");
         card.className="profile";
         card.innerHTML=`
@@ -277,6 +277,7 @@
           <h3>${p.name}</h3>
           <p>${p.region} / ${p.city}</p>
           <p>AGE: ${p.age}</p>
+          <p>BODYTYPE: ${p.bodytype}</p>
         `;
         card.onclick=()=>openModal(p,p.region,p.city);
         profilesDiv.appendChild(card);
@@ -294,7 +295,7 @@
 
     function openModal(p,region,city){
       modal.classList.add("active");
-      const imgPath=`images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+      const imgPath=`24/images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
       modalImg.src=imgPath;
       modalName.textContent=p.name;
       modalAge.textContent=`AGE: ${p.age}`;
