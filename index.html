@@ -225,12 +225,12 @@
     async function showProfiles(region,city){
       profilesDiv.innerHTML="";
       try{
-        const path=`24/images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
+        const path=`images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
         const res=await fetch(path);
         const profiles=await res.json();
 
         profiles.forEach(p=>{
-          const imgPath=`24/images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+          const imgPath=`images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
           const card=document.createElement("div");
           card.className="profile";
           card.innerHTML=`
@@ -257,7 +257,7 @@
         const cities=data[region];
         const city=cities[Math.floor(Math.random()*cities.length)];
         try{
-          const path=`24/images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
+          const path=`images/${region}/${city}/list.json`.replace(/ /g,"%20").replace(/&/g,"%26");
           const res=await fetch(path);
           const list=await res.json();
           if(list.length>0){
@@ -269,7 +269,7 @@
 
       profilesDiv.innerHTML="";
       randomProfiles.forEach(p=>{
-        const imgPath=`24/images/${p.region}/${p.city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+        const imgPath=`images/${p.region}/${p.city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
         const card=document.createElement("div");
         card.className="profile";
         card.innerHTML=`
@@ -294,7 +294,7 @@
 
     function openModal(p,region,city){
       modal.classList.add("active");
-      const imgPath=`24/images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
+      const imgPath=`images/${region}/${city}/${p.img}`.replace(/ /g,"%20").replace(/&/g,"%26");
       modalImg.src=imgPath;
       modalName.textContent=p.name;
       modalAge.textContent=`AGE: ${p.age}`;
