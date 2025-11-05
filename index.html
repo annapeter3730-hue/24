@@ -187,7 +187,6 @@
     const cityList=document.getElementById("cityList");
     const profilesDiv=document.getElementById("profiles");
 
-    // ✅ 지역 목록 표시
     Object.keys(data).forEach(region=>{
       const div=document.createElement("div");
       div.className="region";
@@ -196,7 +195,6 @@
       regionList.appendChild(div);
     });
 
-    // ✅ 도시 목록 표시
     function showCities(region){
       cityList.innerHTML="";
       profilesDiv.innerHTML="";
@@ -221,7 +219,6 @@
       });
     }
 
-    // ✅ 프로필 표시
     async function showProfiles(region,city){
       profilesDiv.innerHTML="";
       try{
@@ -247,7 +244,6 @@
       }
     }
 
-    // ✅ 첫 화면 랜덤 프로필 (AGE + BODYTYPE 둘 다 표시)
     async function loadRandomProfiles(){
       const allRegions=Object.keys(data);
       const randomProfiles=[];
@@ -285,7 +281,6 @@
     }
     loadRandomProfiles();
 
-    // ✅ 모달
     const modal=document.getElementById("modal");
     const modalImg=document.getElementById("modalImg");
     const modalName=document.getElementById("modalName");
@@ -305,7 +300,6 @@
     closeBtn.onclick=()=>modal.classList.remove("active");
     modal.onclick=e=>{if(e.target===modal)modal.classList.remove("active");};
 
-    // ✅ 탭 전환
     document.querySelectorAll(".tab").forEach(tab=>{
       tab.onclick=()=>{
         document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
