@@ -195,10 +195,6 @@
       regionList.appendChild(div);
     });
 
-    function encodePath(path) {
-      return path.split('/').map(part => encodeURIComponent(part)).join('/');
-    }
-
     function showCities(region){
       cityList.innerHTML="";
       profilesDiv.innerHTML="";
@@ -226,12 +222,11 @@
     async function showProfiles(region,city){
       profilesDiv.innerHTML="";
       try{
-        const path = encodePath(`24/images/${region}/${city}/list.json`);
-        const res=await fetch(path);
+        const res=await fetch(`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
         const profiles=await res.json();
 
         profiles.forEach(p=>{
-          const imgPath = encodePath(`24/images/${region}/${city}/${p.img}`);
+          const imgPath=`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/${encodeURIComponent(p.img)}`;
           const card=document.createElement("div");
           card.className="profile";
           card.innerHTML=`
@@ -257,8 +252,7 @@
         const cities=data[region];
         const city=cities[Math.floor(Math.random()*cities.length)];
         try{
-          const path=encodePath(`24/images/${region}/${city}/list.json`);
-          const res=await fetch(path);
+          const res=await fetch(`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/list.json`);
           const list=await res.json();
           if(list.length>0){
             const p=list[Math.floor(Math.random()*list.length)];
@@ -269,7 +263,7 @@
 
       profilesDiv.innerHTML="";
       randomProfiles.forEach(p=>{
-        const imgPath=encodePath(`24/images/${p.region}/${p.city}/${p.img}`);
+        const imgPath=`24/images/${encodeURIComponent(p.region)}/${encodeURIComponent(p.city)}/${encodeURIComponent(p.img)}`;
         const card=document.createElement("div");
         card.className="profile";
         card.innerHTML=`
@@ -294,7 +288,7 @@
 
     function openModal(p,region,city){
       modal.classList.add("active");
-      const imgPath=encodePath(`24/images/${region}/${city}/${p.img}`);
+      const imgPath=`24/images/${encodeURIComponent(region)}/${encodeURIComponent(city)}/${encodeURIComponent(p.img)}`;
       modalImg.src=imgPath;
       modalName.textContent=p.name;
       modalAge.textContent=`AGE: ${p.age}`;
